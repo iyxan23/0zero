@@ -4,24 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Add DesktopLauncher run configuration for IDEA">
-      <change afterPath="$PROJECT_DIR$/android/src/com/iyxan23/gianxddddd/zerozero/AndroidLauncher.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desktop/src/com/iyxan23/gianxddddd/zerozero/desktop/DesktopLauncher.kt" afterDir="false" />
+    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="refactor: Convert Java classes to Kotlin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/com/iyxan23/gianxddddd/zerozero/AndroidLauncher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/src/com/iyxan23/gianxddddd/zerozero/desktop/DesktopLauncher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/com/iyxan23/gianxddddd/zerozero/AndroidLauncher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/com/iyxan23/gianxddddd/zerozero/AndroidLauncher.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PEVBB20630215945]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +41,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
   </component>
-  <component name="RunManager" selected="Application.DesktopLauncher">
+  <component name="RunManager" selected="Android App.AndroidLauncher">
     <configuration name="AndroidLauncher" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="0zero.android" />
       <option name="DEPLOY" value="true" />
@@ -145,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629385078729</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor: Convert Java classes to Kotlin">
+      <created>1629386034155</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629386034155</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +180,7 @@
     <MESSAGE value="feat: Add LibGDX libraries" />
     <MESSAGE value="fix: Add DesktopLauncher run configuration for IDEA" />
     <MESSAGE value="feat: Add DesktopLauncher run configuration for IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add DesktopLauncher run configuration for IDEA" />
+    <MESSAGE value="refactor: Convert Java classes to Kotlin" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Convert Java classes to Kotlin" />
   </component>
 </project>
