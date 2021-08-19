@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground">
-      <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" afterDir="false" />
+    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Add comments">
+      <change afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/data/Preferences.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.iyxan23.gianxddddd.zerozero.data" />
+      <recent name="com.iyxan23.gianxddddd.zerozero" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.DesktopLauncher">
     <configuration name="AndroidLauncher" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -175,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629396548713</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: Use black color for background">
+      <created>1629397088766</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1629397088766</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: Add comments">
+      <created>1629397281788</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1629397281788</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +224,8 @@
     <MESSAGE value="refactor: Optimize imports, feat: Translucent navigation bar, fix: Navigation bar not hiding" />
     <MESSAGE value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux)" />
     <MESSAGE value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground" />
+    <MESSAGE value="feat: Use black color for background" />
+    <MESSAGE value="feat: Add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add comments" />
   </component>
 </project>
