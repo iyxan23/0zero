@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/src/com/iyxan23/gianxddddd/zerozero/desktop/DesktopLauncher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/com/iyxan23/gianxddddd/zerozero/desktop/DesktopLauncher.kt" afterDir="false" />
+    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground">
+      <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629395769071</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground">
+      <created>1629396548713</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1629396548713</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +202,7 @@
     <MESSAGE value="refactor: Convert Java classes to Kotlin" />
     <MESSAGE value="refactor: Optimize imports, feat: Translucent navigation bar, fix: Navigation bar not hiding" />
     <MESSAGE value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux)" />
+    <MESSAGE value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground" />
   </component>
 </project>

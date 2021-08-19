@@ -14,7 +14,7 @@ class Zero : ApplicationAdapter() {
     }
 
     override fun render() {
-        ScreenUtils.clear(1f, 0f, 0f, 1f)
+        ScreenUtils.clear(0f, 0f, 0f, 0f)
         batch!!.begin()
         batch!!.draw(img, 0f, 0f)
         batch!!.end()
