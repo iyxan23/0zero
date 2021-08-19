@@ -19,7 +19,6 @@ www-test/
 
 ## Android Studio and Intellij and Android in general
 /android/gen/
-.idea/
 *.ipr
 *.iws
 *.iml

@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+codeStyles
+compiler.xml
+discord.xml
+gradle.xml
+jarRepositories.xml
+libraries-with-intellij-classes.xml
+misc.xml
+Project.xml
+vcs.xml
