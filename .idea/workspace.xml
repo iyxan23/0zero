@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Wrote some basic preferences">
-      <change afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/screen/SplashScreen.kt" afterDir="false" />
+    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Extend game classes, feat: New window icon for desktop platform">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/src/com/iyxan23/gianxddddd/zerozero/desktop/DesktopLauncher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/com/iyxan23/gianxddddd/zerozero/desktop/DesktopLauncher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/data/Preferences.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/data/Preferences.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/screen/SplashScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/screen/SplashScreen.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629398075660</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: Extend game classes, feat: New window icon for desktop platform">
+      <created>1629439940836</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629439940836</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +249,7 @@
     <MESSAGE value="feat: Use black color for background" />
     <MESSAGE value="feat: Add comments" />
     <MESSAGE value="feat: Wrote some basic preferences" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Wrote some basic preferences" />
+    <MESSAGE value="feat: Extend game classes, feat: New window icon for desktop platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Extend game classes, feat: New window icon for desktop platform" />
   </component>
 </project>

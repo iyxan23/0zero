@@ -1,17 +1,20 @@
 package com.iyxan23.gianxddddd.zerozero
 
 import com.badlogic.gdx.Game
-import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
-import com.badlogic.gdx.utils.ScreenUtils
+import com.iyxan23.gianxddddd.zerozero.data.Preferences
 import com.iyxan23.gianxddddd.zerozero.screen.SplashScreen
 
 class Zero : Game() {
     var batch: SpriteBatch? = null
+    var preferences: Preferences? = null
 
     override fun create() {
-        // Initialize batch
+        // Initialize batch and preferences
+        preferences = Preferences()
         batch = SpriteBatch()
+
+
 
         setScreen(SplashScreen(this))
     }
