@@ -7,13 +7,8 @@ import com.badlogic.gdx.utils.ScreenUtils
 import com.iyxan23.gianxddddd.zerozero.Zero
 
 class SplashScreen(game: Game?) : ScreenAdapter() {
-    private var game: Game? = null
-    private var splashTexture: Texture? = null
-
-    init {
-        this.game = game
-        this.splashTexture = Texture("badlogic.jpg")
-    }
+    private val game: Game = game!!
+    private val splashTexture: Texture = Texture("badlogic.jpg")
 
     override fun show() {
         Gdx.input.inputProcessor = object: InputProcessor {
@@ -79,6 +74,6 @@ class SplashScreen(game: Game?) : ScreenAdapter() {
 
     override fun dispose() {
         // Should dispose splash image, after screen no longer used
-        splashTexture!!.dispose()
+        splashTexture.dispose()
     }
 }
