@@ -1,8 +1,6 @@
 package com.iyxan23.gianxddddd.zerozero.screen
 
-import com.badlogic.gdx.Game
-import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.ScreenAdapter
+import com.badlogic.gdx.*
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.utils.ScreenUtils
@@ -18,7 +16,51 @@ class SplashScreen(game: Game?) : ScreenAdapter() {
     }
 
     override fun show() {
-        // TODO: Do input stuff here
+        Gdx.input.inputProcessor = object: InputProcessor {
+            override fun keyDown(keycode: Int): Boolean {
+                if (keycode == Input.Keys.ESCAPE) {
+                    Gdx.app.exit()
+                    return true
+                }
+
+                return false
+            }
+
+            override fun keyUp(keycode: Int): Boolean {
+                // DO nothing
+                return false
+            }
+
+            override fun keyTyped(character: Char): Boolean {
+                // DO nothing
+                return false
+            }
+
+            override fun touchDown(screenX: Int, screenY: Int, pointer: Int, button: Int): Boolean {
+                // DO nothing
+                return false
+            }
+
+            override fun touchUp(screenX: Int, screenY: Int, pointer: Int, button: Int): Boolean {
+                // DO nothing
+                return false
+            }
+
+            override fun touchDragged(screenX: Int, screenY: Int, pointer: Int): Boolean {
+                // DO nothing
+                return false
+            }
+
+            override fun mouseMoved(screenX: Int, screenY: Int): Boolean {
+                // DO nothing
+                return false
+            }
+
+            override fun scrolled(amountX: Float, amountY: Float): Boolean {
+                // DO nothing
+                return false
+            }
+        }
     }
 
     override fun render(delta: Float) {
