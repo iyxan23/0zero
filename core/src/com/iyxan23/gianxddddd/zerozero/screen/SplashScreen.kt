@@ -8,9 +8,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.GlyphLayout
 import com.badlogic.gdx.utils.ScreenUtils
 import com.badlogic.gdx.utils.TimeUtils
-import com.iyxan23.gianxddddd.zerozero.MIN_HEIGHT
-import com.iyxan23.gianxddddd.zerozero.MIN_WIDTH
-import com.iyxan23.gianxddddd.zerozero.NAME
+import com.iyxan23.gianxddddd.zerozero.data.Preferences
 import com.iyxan23.gianxddddd.zerozero.Zero
 
 /**
@@ -23,14 +21,19 @@ class SplashScreen(gameRaw: Game) : ScreenAdapter() {
     private val game = gameRaw as Zero
     private val assetManager = AssetManager()
 
+    private val preferences by lazy {
+        Preferences()
+    }
+
     private val font by lazy {
         BitmapFont().apply { setColor(1f, 1f, 1f, 1f) }
     }
 
-    private val mainTextGlyph = GlyphLayout(font, NAME)
+    private val mainTextGlyph = GlyphLayout(font, "0zero")
 
     private val camera by lazy {
-        OrthographicCamera().apply { setToOrtho(false, MIN_WIDTH.toFloat(), MIN_HEIGHT.toFloat()) }
+        OrthographicCamera().apply { setToOrtho(false, Gdx.graphics.width.toFloat(),
+            Gdx.graphics.height.toFloat()) }
     }
 
     private val startTime = System.currentTimeMillis()
@@ -40,7 +43,21 @@ class SplashScreen(gameRaw: Game) : ScreenAdapter() {
         Gdx.input.inputProcessor = object: InputProcessor {
             override fun keyDown(keycode: Int): Boolean {
                 if (keycode == Input.Keys.ESCAPE) {
-                    Gdx.app.exit()
+                    // Exit game
+                    app.exit()
+                    return true
+                } else if (keycode == Input.Keys.BACKSPACE) {
+                    // Toggle fullscreen mode
+
+                    if (!Gdx.graphics.isFullscreen &&
+                        !preferences.shouldBeFullscreen()) {
+                        preferences.setWindowFullscreen(true)
+                        Gdx.graphics.setFullscreenMode(Gdx.graphics.displayMode)
+                    } else {
+                        preferences.setWindowFullscreen(false)
+                        Gdx.graphics.setWindowedMode(Gdx.graphics.width, Gdx.graphics.height)
+                    }
+
                     return true
                 }
 
@@ -99,8 +116,8 @@ class SplashScreen(gameRaw: Game) : ScreenAdapter() {
         font.draw(
             game.batch,
             mainTextGlyph,
-            (MIN_WIDTH - mainTextGlyph.width) / 2,
-            (MIN_HEIGHT - mainTextGlyph.width) / 2
+            (Gdx.graphics.width - mainTextGlyph.width) / 2,
+            (Gdx.graphics.height - mainTextGlyph.width) / 2
         )
 
         game.batch.end()
