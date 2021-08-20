@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="refactor: Convert Java classes to Kotlin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/com/iyxan23/gianxddddd/zerozero/AndroidLauncher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/com/iyxan23/gianxddddd/zerozero/AndroidLauncher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PEVBB20630215945]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -33,6 +31,7 @@
   <component name="ProjectId" id="1wwjFiCWQxJ8AndtxLs3si7tiaS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -41,7 +40,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
   </component>
-  <component name="RunManager" selected="Android App.AndroidLauncher">
+  <component name="RunManager" selected="Application.DesktopLauncher">
     <configuration name="AndroidLauncher" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="0zero.android" />
       <option name="DEPLOY" value="true" />
