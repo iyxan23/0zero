@@ -1,31 +1,23 @@
 package com.iyxan23.gianxddddd.zerozero
 
-import com.badlogic.gdx.ApplicationAdapter
+import com.badlogic.gdx.Game
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.utils.ScreenUtils
+import com.iyxan23.gianxddddd.zerozero.screen.SplashScreen
 
-class Zero : ApplicationAdapter() {
+class Zero : Game() {
     var batch: SpriteBatch? = null
-    var img: Texture? = null
 
     override fun create() {
-        // Initialize batch and img
+        // Initialize batch
         batch = SpriteBatch()
-        img = Texture("badlogic.jpg")
-    }
 
-    override fun render() {
-        // Clear the screen and put colors first, then draw the badlogic image
-        ScreenUtils.clear(0f, 0f, 0f, 0f)
-        batch!!.begin()
-        batch!!.draw(img, 0f, 0f)
-        batch!!.end()
+        setScreen(SplashScreen(this))
     }
 
     override fun dispose() {
-        // If the game is going to exit, dispose batch and img
+        // Resources are no longer used, time to dispose
         batch!!.dispose()
-        img!!.dispose()
     }
 }
