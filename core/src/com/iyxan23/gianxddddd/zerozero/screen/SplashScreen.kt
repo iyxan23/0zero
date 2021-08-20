@@ -1,14 +1,40 @@
 package com.iyxan23.gianxddddd.zerozero.screen
 
 import com.badlogic.gdx.*
-import com.badlogic.gdx.graphics.GL20
-import com.badlogic.gdx.graphics.Texture
+import com.badlogic.gdx.Gdx.app
+import com.badlogic.gdx.assets.AssetManager
+import com.badlogic.gdx.graphics.OrthographicCamera
+import com.badlogic.gdx.graphics.g2d.BitmapFont
+import com.badlogic.gdx.graphics.g2d.GlyphLayout
 import com.badlogic.gdx.utils.ScreenUtils
+import com.badlogic.gdx.utils.TimeUtils
+import com.iyxan23.gianxddddd.zerozero.MIN_HEIGHT
+import com.iyxan23.gianxddddd.zerozero.MIN_WIDTH
+import com.iyxan23.gianxddddd.zerozero.NAME
 import com.iyxan23.gianxddddd.zerozero.Zero
 
-class SplashScreen(game: Game?) : ScreenAdapter() {
-    private val game: Game = game!!
-    private val splashTexture: Texture = Texture("badlogic.jpg")
+/**
+ * In this SplashScreen, we are going to wait for the AssetManager to load all assets.
+ *
+ * This will splash for a fixed amount 5s, if we loaded assets too fast, it will delay until 5s. If we passed the time,
+ * the loading time will get extended until all assets are loaded
+ */
+class SplashScreen(gameRaw: Game) : ScreenAdapter() {
+    private val game = gameRaw as Zero
+    private val assetManager = AssetManager()
+
+    private val font by lazy {
+        BitmapFont().apply { setColor(1f, 1f, 1f, 1f) }
+    }
+
+    private val mainTextGlyph = GlyphLayout(font, NAME)
+
+    private val camera by lazy {
+        OrthographicCamera().apply { setToOrtho(false, MIN_WIDTH.toFloat(), MIN_HEIGHT.toFloat()) }
+    }
+
+    private val startTime = System.currentTimeMillis()
+    private val waitAmount = 10_000 // 10s (10000ms)
 
     override fun show() {
         Gdx.input.inputProcessor = object: InputProcessor {
@@ -62,10 +88,29 @@ class SplashScreen(game: Game?) : ScreenAdapter() {
         // Clear the background, then set the background color
         ScreenUtils.clear(0f, 0f, 0f, 0f)
 
-        // Draw splash image
-        (game as Zero).batch.begin()
-        (game as Zero).batch.draw(splashTexture!!, 0f, 0f)
-        (game as Zero).batch.end()
+        // Update the camera and set the game batch's projection matrix to the camera
+        camera.update()
+        game.batch.projectionMatrix = camera.combined
+
+        // Show a simple text
+        // TODO: 8/20/21 Use an image instead
+        game.batch.begin()
+
+        font.draw(
+            game.batch,
+            mainTextGlyph,
+            (MIN_WIDTH - mainTextGlyph.width) / 2,
+            (MIN_HEIGHT - mainTextGlyph.width) / 2
+        )
+
+        game.batch.end()
+
+        // Check if the assets are loaded and if we have passed the waiting amount
+        if (assetManager.update() && TimeUtils.timeSinceMillis(startTime) > waitAmount) {
+            // TODO: 8/20/21 Show the home screen
+            println("Show the screen!")
+            app.exit()
+        }
     }
 
     override fun hide() {
@@ -74,6 +119,6 @@ class SplashScreen(game: Game?) : ScreenAdapter() {
 
     override fun dispose() {
         // Should dispose splash image, after screen no longer used
-        splashTexture.dispose()
+        font.dispose()
     }
 }
