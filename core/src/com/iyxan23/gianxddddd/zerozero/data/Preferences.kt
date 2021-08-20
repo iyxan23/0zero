@@ -30,6 +30,6 @@ class Preferences {
     }
 
     fun getSFXVolume(): Float {
-        return preferences?.getFloat("sfxVolume")!!
+        return preferences.getFloat("sfxVolume")
     }
 }

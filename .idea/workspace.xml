@@ -12,6 +12,8 @@
     <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Extend game classes, feat: New window icon for desktop platform">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/data/Preferences.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/data/Preferences.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/screen/SplashScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/screen/SplashScreen.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,6 @@
   <component name="ProjectId" id="1wwjFiCWQxJ8AndtxLs3si7tiaS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -46,6 +47,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.iyxan23.gianxddddd.zerozero.data" />
+      <recent name="com.iyxan23.gianxddddd.zerozero" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.DesktopLauncher">
     <configuration name="AndroidLauncher" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -245,3 +252,4 @@
     <MESSAGE value="feat: Extend game classes, feat: New window icon for desktop platform" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: Extend game classes, feat: New window icon for desktop platform" />
   </component>
+</project>
