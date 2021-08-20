@@ -10,7 +10,6 @@ class Zero : Game() {
     private val preferences: Preferences by lazy { Preferences() }
 
     override fun create() {
-
         setScreen(SplashScreen(this))
     }
 
