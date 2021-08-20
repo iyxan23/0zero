@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="refactor: Convert Java classes to Kotlin">
+    <list default="true" id="889a3b21-a992-4515-b16a-8ab87767012f" name="Default Changelist" comment="feat: Extend game classes, feat: New window icon for desktop platform">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/iyxan23/gianxddddd/zerozero/Zero.kt" afterDir="false" />
     </list>
@@ -35,9 +40,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
   </component>
   <component name="RunManager" selected="Application.DesktopLauncher">
@@ -155,7 +162,56 @@
       <option name="project" value="LOCAL" />
       <updated>1629386034155</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor: Optimize imports, feat: Translucent navigation bar, fix: Navigation bar not hiding">
+      <created>1629391169387</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629391169388</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux)">
+      <created>1629395769071</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1629395769071</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground">
+      <created>1629396548713</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1629396548713</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: Use black color for background">
+      <created>1629397088766</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1629397088766</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: Add comments">
+      <created>1629397281788</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1629397281788</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: Wrote some basic preferences">
+      <created>1629398075659</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1629398075660</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: Extend game classes, feat: New window icon for desktop platform">
+      <created>1629439940836</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629439940836</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +236,12 @@
     <MESSAGE value="fix: Add DesktopLauncher run configuration for IDEA" />
     <MESSAGE value="feat: Add DesktopLauncher run configuration for IDEA" />
     <MESSAGE value="refactor: Convert Java classes to Kotlin" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Convert Java classes to Kotlin" />
+    <MESSAGE value="refactor: Optimize imports, feat: Translucent navigation bar, fix: Navigation bar not hiding" />
+    <MESSAGE value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux)" />
+    <MESSAGE value="feat: Use lwjgl3 backend to prevent having issues with ArrayIndexOutOfBoundsException after findPrimary() at xrandr (Linux), feat: Game will now launch at maximized mode, fix: Prevent window size from going to 0x0 resolutions, fix: Game will reduce FPS in foreground" />
+    <MESSAGE value="feat: Use black color for background" />
+    <MESSAGE value="feat: Add comments" />
+    <MESSAGE value="feat: Wrote some basic preferences" />
+    <MESSAGE value="feat: Extend game classes, feat: New window icon for desktop platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Extend game classes, feat: New window icon for desktop platform" />
   </component>
-</project>
