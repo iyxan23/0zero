@@ -8,7 +8,6 @@ class Preferences {
 
     init {
         // Init preferences
-        TODO("Use Game class")
         preferences = Gdx.app.getPreferences("preferences")
     }
 
@@ -22,12 +21,12 @@ class Preferences {
         preferences?.flush()
     }
 
-    fun setWindowMaximized(boolean: Boolean) {
-        preferences?.putBoolean("maximized", boolean)
+    fun setWindowFullscreen(boolean: Boolean) {
+        preferences?.putBoolean("fullscreen", boolean)
         preferences?.flush()
     }
 
-    fun shouldBeMaximized(): Boolean {
+    fun shouldBeFullscreen(): Boolean {
         return preferences?.getBoolean("maximized")!!
     }
 
