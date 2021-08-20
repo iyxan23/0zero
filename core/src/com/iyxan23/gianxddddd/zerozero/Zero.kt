@@ -6,7 +6,7 @@ import com.iyxan23.gianxddddd.zerozero.data.Preferences
 import com.iyxan23.gianxddddd.zerozero.screen.SplashScreen
 
 class Zero : Game() {
-    private val batch: SpriteBatch by lazy { SpriteBatch() }
+    val batch: SpriteBatch by lazy { SpriteBatch() }
     private val preferences: Preferences by lazy { Preferences() }
 
     override fun create() {

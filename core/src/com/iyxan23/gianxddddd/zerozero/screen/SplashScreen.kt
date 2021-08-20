@@ -68,10 +68,9 @@ class SplashScreen(game: Game?) : ScreenAdapter() {
         ScreenUtils.clear(0f, 0f, 0f, 0f)
 
         // Draw splash image
-        (game as Zero).batch?.begin()
-        (game as Zero).batch?.draw(splashTexture!!,
-            0f, 0f)
-        (game as Zero).batch?.end()
+        (game as Zero).batch.begin()
+        (game as Zero).batch.draw(splashTexture!!, 0f, 0f)
+        (game as Zero).batch.end()
     }
 
     override fun hide() {
